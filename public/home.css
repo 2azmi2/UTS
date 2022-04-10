@@ -1,0 +1,61 @@
+body{
+	background: url('img/bgHome.jpg');
+    background-size: 100%;
+	background-color: rgb(181, 181, 255);
+}
+.container{
+    text-align: center;
+}
+.containerUtama1{
+    text-align: center;
+    margin-top: 75px;
+    background-color: rgba(255, 255, 255, 0.6);
+    margin-left: 350px;
+    margin-right: 350px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+.containerForm{
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.containerUtama2{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    margin-left: 350px;
+    margin-right: 350px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+.containerForm2{
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.row{
+    text-align: center;
+    width: 100%;
+}
+.row2{
+    text-align: center;
+    margin-left: 150px;
+    margin-right: 145px;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+.contain2{
+    text-align: center;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+.imageAnime{
+    height: 200px;
+    width: 200px;
+    padding-right: 5px;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+.penjelasan{
+    height: fit-content;
+    width: fit-content;
+    margin-left: 10px;
+}

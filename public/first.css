@@ -1,0 +1,13 @@
+body{
+	background: url('img/bgHome1.png');
+    background-size: 100%;
+	background-color: rgb(181, 181, 255);
+}
+.judul{
+    text-align: center;
+    color: aquamarine;
+}
+.home{
+    text-align: center;
+    padding-top: 15%;
+}
