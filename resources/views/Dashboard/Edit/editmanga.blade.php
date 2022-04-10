@@ -2,7 +2,7 @@
 
 @section('isi')
 <div class="containerUtama2">
-    <h2>Edit Profile</h2>
+    <h2>Edit Manga</h2>
     <br>
     @if(session()->has('success'))
         <div class="alert alert-warning alert-dismissable fade show" role="alert">
