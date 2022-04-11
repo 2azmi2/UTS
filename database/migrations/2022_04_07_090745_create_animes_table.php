@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('animes', function (Blueprint $table) {
             $table->id();
             $table->string("Judul")->unique();
-            $table->string("nama");
+            $table->string("genre");
             $table->string("image");
             $table->string("keterangan");
             $table->timestamps();

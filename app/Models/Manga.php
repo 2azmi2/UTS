@@ -16,7 +16,7 @@ class Manga extends Model
     protected $primaryKey = 'id';
     protected $fillable = [
         'judul',
-        'nama',
+        'genre',
         'image',
         'keterangan',
     ];

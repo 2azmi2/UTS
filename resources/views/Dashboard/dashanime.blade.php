@@ -9,7 +9,7 @@
                 <tr>
                     <th scope="col">Image</th>
                     <th scope="col">Judul</th>
-                    <th scope="col">Nama</th>
+                    <th scope="col">genre</th>
                     <th scope="col">Keterangan</th>
                     <th scope="col" width="280px">Aksi</th>
                 </tr>
@@ -21,7 +21,7 @@
                             <img src="{{ asset('images/'.$item->image) }}" class="rounded" width="250px" height="200px">
                         </td>
                         <td>{{ $item->Judul }}</td>
-                        <td>{{ $item->nama }}</td>
+                        <td>{{ $item->genre }}</td>
                         <td>{{ $item->keterangan }}</td>
                         <td><form action="{{ route('dashAnime.destroy',['dashAnime'=>$item->id]) }}" method="POST">
                             <a class="btn btn-primary" href="/editAnime/{{ $item->id }}">EDIT</a>

@@ -7,10 +7,10 @@
         <table class="table">
             <thead>
                 <tr>
-                    <th scope="col">Image</th>
-                    <th scope="col">Judul</th>
-                    <th scope="col">Nama</th>
-                    <th scope="col">Keterangan</th>
+                    <th scope="col" width="200px">Image</th>
+                    <th scope="col" width="200px">Judul</th>
+                    <th scope="col" width="200px">Nama</th>
+                    <th scope="col" width="200px">Keterangan</th>
                     <th scope="col" width="280px">Aksi</th>
                 </tr>
             </thead>

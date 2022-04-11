@@ -17,21 +17,21 @@
                     <label class="form-label" for="judul">Judul</label>
                     <input type="text" id="judul" name="judul" class="form-control" value="{{ old('judul') }}"/>
                     @error('judul')
-                        <div class="error">Harus mencantumkan judul</div>
+                        <span class="text-danger">{{ $message }}</span>
                     @enderror
                 </div>
                 <div class="form-outline mb-2">
-                    <label class="form-label" for="nama">Nama</label>
-                    <input type="text" id="nama" name="nama" class="form-control" value="{{ old('nama') }}"/>
-                    @error('nama')
-                        <div class="error">Harus mencantumkan nama</div>
+                    <label class="form-label" for="genre">genre</label>
+                    <input type="text" id="genre" name="genre" class="form-control" value="{{ old('genre') }}"/>
+                    @error('genre')
+                        <span class="text-danger">{{ $message }}</span>
                     @enderror
                 </div>
                 <div class="form-outline mb-2">
                     <label class="form-label" for="Keterangan">Keterangan</label>
                     <textarea id="keterangan" name="keterangan" class="form-control" value="{{ old('keterangan') }}"></textarea>
                     @error('keterangan')
-                        <div class="error">Harus mencantumkan keterangan</div>
+                        <span class="text-danger">{{ $message }}</span>
                     @enderror
                 </div>
                 <div class="mb-3">

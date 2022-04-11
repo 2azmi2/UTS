@@ -1,8 +1,8 @@
-@extends('style.style')
+@extends('style.style2')
 
 @section('isi')
 <div class="containerUtama2">
-    <h2>Edit Profile</h2>
+    <h2>Edit Manga</h2>
     <br>
     @if(session()->has('success'))
         <div class="alert alert-warning alert-dismissable fade show" role="alert">
@@ -18,21 +18,21 @@
                 <label class="form-label" for="judul">Judul</label>
                 <input type="text" id="judul" name="judul" class="form-control" value="{{ $data->Judul }}"/>
                 @error('judul')
-                    <div class="error">Harus mencantumkan judul</div>
+                    <span class="text-danger">{{ $message }}</span>
                 @enderror
             </div>
             <div class="form-outline mb-2">
-                <label class="form-label" for="nama">Nama</label>
-                <input type="text" id="nama" name="nama" class="form-control" value="{{ $data->nama }}"/>
-                @error('nama')
-                    <div class="error">Harus mencantumkan nama</div>
+                <label class="form-label" for="genre">genre</label>
+                <input type="text" id="genre" name="genre" class="form-control" value="{{ $data->genre }}"/>
+                @error('genre')
+                    <span class="text-danger">{{ $message }}</span>
                 @enderror
             </div>
             <div class="form-outline mb-2">
                 <label class="form-label" for="Keterangan">Keterangan</label>
                 <textarea id="keterangan" name="keterangan" class="form-control">{{ $data->keterangan }}</textarea>
                 @error('keterangan')
-                    <div class="error">Harus mencantumkan keterangan</div>
+                    <span class="text-danger">{{ $message }}</span>
                 @enderror
             </div>
             <div class="mb-3">

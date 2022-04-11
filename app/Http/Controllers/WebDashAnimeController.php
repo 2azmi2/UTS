@@ -16,7 +16,7 @@ class WebDashAnimeController extends Controller
     public function store(Request $request){
         $validateData=$request->validate([
             'judul'=>'required',
-            'nama'=>'required',
+            'genre'=>'required',
             'image'=>'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             'keterangan'=>'required'
         ]);
@@ -26,7 +26,7 @@ class WebDashAnimeController extends Controller
 
         Anime::create([
             'judul' => $request->get('judul'),
-            'nama' => $request->get('nama'),
+            'genre' => $request->get('genre'),
             'image' => $imageName,
             'keterangan' => $request->get('keterangan')
         ]);
@@ -37,7 +37,7 @@ class WebDashAnimeController extends Controller
     {
         $request->validate([
             'judul'=>'required',
-            'nama'=>'required',
+            'genre'=>'required',
             'image'=>'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             'keterangan'=>'required'
         ]);
@@ -46,7 +46,7 @@ class WebDashAnimeController extends Controller
 
         Anime::find($id)->update([
             'judul' => $request->get('judul'),
-            'nama' => $request->get('nama'),
+            'genre' => $request->get('genre'),
             'image' => $imageName,
             'keterangan' => $request->get('keterangan')
         ]);
