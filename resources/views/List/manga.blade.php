@@ -1,9 +1,9 @@
 @extends('style.style1')
 
 @section('isi')
+    <br>
+    <div class="judulHalaman"><h2>MANGA LIST</h2></div>
     @foreach ($data as $item)
-        <br>
-        <div class="judulHalaman"><h2>MANGA LIST</h2></div>
         <br>
         <div class="row2">
             <div class="judulAnime"><h2>{{ $item->Judul }}</h2></div>
